@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Day 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="head1">Hello JS Tutorial!</h1>
+        <h1>I am second H1 tag</h1>
+    </div>
+    <div class="adding">
+        <h1>Adding an element</h1>
+    </div>
+    <div class="adding">
+        <h1>Adding an element</h1>
+    </div>
+    <div class="adding">
+        <h1>Adding an element</h1>
+    </div>
+    <div class="final" id="final1">
+        <h1>I am final</h1>
+    </div>
+
+    <script>
+        // message console log
+        console.log("Hello, World!");
+
+        // message Alert
+        // alert("Hello, World!");
+
+        // single var console log
+        var foo = 34;
+        console.log(foo);
+        // alert(foo);
+
+        // multiple var console log with concatination
+        var thisVar = 45;
+        var thatVar = 55;
+        console.log("thisVar:", thisVar, "and thatVar:", thatVar, "mltiplication of this and that = ", thisVar * thatVar);
+        alert("thisVar: "+ thisVar+ " and thatVar:"+ thatVar + " mltiplication of this and that = "+ (thisVar * thatVar));
+
+        // Placeholders 
+        var fn = "Yash", ln = "Lolage", sub = "Maths", marks = 85;
+        console.log("%s %s has got %d Marks in %s !", fn, ln, marks, sub);
+
+        alert( `${fn} ${ln} has got ${marks} Marks in ${sub} !`);
+        alert(fn+' '+ln+' has got '+marks+' in '+sub+' !');
+
+        // object log 
+        console.log({
+            'Email': 'info@stitpragya.in',
+            'Groups': {},
+            'Id': 33,
+            'IsHiddenInUI': false,
+            'IsSiteAdmin': false,
+            'LoginName': 'i:0#.w|virtualdomain\\user2',
+            'PrincipalType': 1,
+            'Title': 'user2'
+        });
+
+        // array
+        var array1 = [23, 67, 89, 4, 5];
+        console.log(array1);
+
+        // second ele,memnt of array array1
+        console.log("Second element of Array : ", array1[1]);
+
+        // body console log
+        console.log(document.getElementsByTagName('h1'));
+        console.log(document.getElementById('head1').parentNode);
+
+        var element = document.createElement('p');
+        element.textContent = "Hello, World Newly Created By JS";
+        var ele=document.getElementsByClassName('adding');
+        console.log(ele[0]);
+        var ele1=ele[0];
+        document.getElementsByClassName('adding')[1].appendChild(element);
+        // document.body.appendChild(element); //add the newly created element to the DOM
+        
+        var thanks = document.createElement('p');
+        thanks.textContent = "Thank You For Visiting .. !";
+        document.getElementById('final1').appendChild(thanks);
+
+
+        // promtp take input from user
+        var age = prompt("How old are you?");
+        console.log(age); // Prints the value inserted by the user
+
+
+    </script>
+
+</body>
+
+</html>

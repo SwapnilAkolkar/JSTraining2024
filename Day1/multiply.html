@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply</title>
+</head>
+
+<body>
+    <h1>
+        <span id="first">4</span> X
+        <span id="second">5</span>=
+        <span id="result">20</span>
+        <h1>
+            multiplications
+        </h1>
+    </h1>
+    <script>
+        // Prompt & Confirm 
+        console.log('js starts');
+        var first = document.getElementById('first');
+        var second = document.getElementById('second');
+        var result = document.getElementById('result');
+        var a = prompt('Enter First Number : ');
+        var b = prompt('Enter Second Number : ');
+        var c = a * b;
+        if (window.confirm("Are you sure to proceed ?")) {
+            showresult();
+        };
+        function showresult()
+        {
+            first.innerText = a;
+            second.innerText = b;
+            result.innerText = c;
+        };
+
+
+
+    </script>
+</body>
+
+</html>
